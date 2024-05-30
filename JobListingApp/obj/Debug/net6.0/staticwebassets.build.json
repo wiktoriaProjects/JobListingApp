@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2u24XPVSu2ZoPTah0Fzs4xpfbMZZKU5OIovus1nNMXc=",
+  "Source": "JobListingApp",
+  "BasePath": "_content/JobListingApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
