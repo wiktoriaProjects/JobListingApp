@@ -1,4 +1,8 @@
 # TODO List
+- [ ] Create JobListing model
+- [ ] Set up Entity Framework Core
+- [ ] Create JobListingController with basic CRUD operations
+- [ ] Configure database connection
 ### Backend
 
 - [ ] Implement authentication and authorization
@@ -51,13 +55,10 @@ BLAZOR??
 - [ ] Improve overall UI/UX design
 
 ## Completed
-
+- [x] make project doc "karta projektu"
 - [x] Set up ASP.NET Core Web API project
-- [x] Create JobListing model
-- [x] Set up Entity Framework Core
-- [x] Create JobListingController with basic CRUD operations
-- [x] Configure database connection
-- [x] Apply initial 
+
+
 
 ROLES --> do przerzucenia >>> polski ?
 # Roles
