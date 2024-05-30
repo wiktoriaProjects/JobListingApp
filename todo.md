@@ -17,9 +17,10 @@
 - [ ] Implement pagination for GET /api/JobListings
 - [ ] Add logging and error handling
 - [ ] Create unit tests for API endpoints
+- [ ] MiddlewareRequest exception - WebApi 
 
 ### Frontend
-BLAZOR??
+BLAZOR
 - [ ] Design and implement the user interface
   - [ ] Job listings page
   - [ ] Job listing details page
