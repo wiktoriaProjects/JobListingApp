@@ -25,6 +25,7 @@ git clone https://github.com/yourusername/JobListingApp.git
 cd JobListingApp
 etc..
 
+```
 ## API Endpoints
 Here are the available API endpoints:
 
