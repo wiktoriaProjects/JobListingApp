@@ -4,13 +4,14 @@ using JobListingApp.Dto;
 using JobListingApp.Persistance;
 using System.Reflection;
 
+
 namespace JobListingApp.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("[controller]")]
     public class ListingsController : Controller
     {
-
+        
         [HttpGet]
         public ActionResult<IEnumerable<ListingDto>> Get()
         {
@@ -22,6 +23,7 @@ namespace JobListingApp.Controllers
                 {
                     Id = l.Id,
                     Title = l.Title,
+                    Description = l.Description,
                     Company = l.Company,
                     PostedDate = l.PostedDate,
                     Location = l.Location,

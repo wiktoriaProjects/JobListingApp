@@ -8,5 +8,6 @@
         public DateTime PostedDate { get; set; }
 //public string CategoryId { get; set; }
         public string Location { get; set; }
+        public string Description { get; internal set; }
     }
 }
