@@ -17,11 +17,11 @@ namespace JobListingApp.Models
         public string Description { get; set; }
 
         // Foreign Key
-        public int CategoryId { get; set; }
+       // public int CategoryId { get; set; }
 
         // Navigation Property
-        [ForeignKey("CategoryId")]
-        public Category Category { get; set; }
+        //[ForeignKey("CategoryId")]
+        //public Category Category { get; set; }
 
         [Required]
         public string Company { get; set; }

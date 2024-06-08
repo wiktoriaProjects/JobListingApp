@@ -3,6 +3,7 @@ using JobListingApp.Models;
 using JobListingApp.Dto;
 using JobListingApp.Persistance;
 using System.Reflection;
+using JobListingApp.WebApi.Services;
 
 
 namespace JobListingApp.Controllers
@@ -11,28 +12,65 @@ namespace JobListingApp.Controllers
     [Route("[controller]")]
     public class ListingsController : Controller
     {
-        
-        [HttpGet]
-        public ActionResult<IEnumerable<ListingDto>> Get()
+       private readonly IListingService _listingService;
+       
+       public ListingsController(IListingService listingService)
         {
-            var listings = ListingSite.Listings;
-            List<ListingDto> result = new List<ListingDto>();
-            foreach (var l in listings)
-            {
-                result.Add(new ListingDto()
-                {
-                    Id = l.Id,
-                    Title = l.Title,
-                    Description = l.Description,
-                    Company = l.Company,
-                    PostedDate = l.PostedDate,
-                    Location = l.Location,
-                    //CategoryId = l.Category.Id
-
-                });
-            }
-            return Ok(listings);
+            this._listingService = listingService;
         }
+
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Listing>> Get()
+        {
+            var result = _listingService.GetAll();
+            return Ok(result);
+
+
+        }
+
+        //GET
+        [HttpGet("{id}", Name = "GetListing")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<Listing> Get(int id)
+        {
+            var result = _listingService.GetById(id);
+            return Ok(result);
+        }
+
+        // CREATE
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult Create([FromBody] CreateListingDto dto)
+        {
+            int id = _listingService.Create(dto);
+            return Ok(id);
+        }
+
+        //DELETE
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public ActionResult Delete(int id)
+        {
+            _listingService.Delete(id);
+            return NoContent();
+        }
+
+        //UPDATE
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult Update(int id, [FromBody] UpdateListingDto dto)
+        {
+            return Ok(id);
+
+        }
+
 
     }
 }

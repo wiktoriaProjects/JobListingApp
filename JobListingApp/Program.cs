@@ -18,17 +18,18 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<DataSeeder>();
 
-var sqliteConnectionString = "Data Source= JobListingApp.db";
 //SQLitePCL.raw.SetProvider(new SQLitePCL.SQLite3Provider_e_sqlite3());
 
+// rejestracja repozytorium produktów w kontenerze IoC
+var sqliteConnectionString = "Data Source= JobListingApp.db";
 builder.Services.AddDbContext<BoardDbContext>(options =>
     options.UseSqlite(sqliteConnectionString));
 
 builder.Services.AddScoped<IBoardUnitOfWork, BoardUnitOfWork>();
-// rejestracja repozytorium produktów w kontenerze IoC
 builder.Services.AddScoped<IListingRepository, ListingRepository>();
+builder.Services.AddScoped<IListingService, ListingService>();
+builder.Services.AddScoped<DataSeeder>();
 var app = builder.Build();
 
 

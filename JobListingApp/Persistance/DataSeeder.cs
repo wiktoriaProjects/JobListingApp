@@ -24,12 +24,21 @@ namespace JobListingApp.WebApi.Persistance
                     {
                         new Listing()
                         {
-                            Id = 1,
+                            Id = 4,
                             Title = "Intern",
+                            Location = "Warsaw, PL",
                             Description = "Develop and maintain web applications.",
                             Company = "Januszex",
                             PostedDate = DateTime.Now.AddDays(-10),
+                        },
+                        new Listing()
+                        {
+                            Id = 5,
+                            Title = "Junior Dev",
                             Location = "Warsaw, PL",
+                            Description = "Develop and maintain web applications.",
+                            Company = "Bobix",
+                            PostedDate = DateTime.Now.AddDays(-1),
                         }
 
 
