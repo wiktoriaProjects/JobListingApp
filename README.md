@@ -1,3 +1,4 @@
+Kanban > https://joblistingapp.atlassian.net/jira/software/projects/JLA/boards/1?atlOrigin=eyJpIjoiNWY3YjZmMGJiMGIwNGRhMmEwYjdkYTFkYjEzMjkzMzQiLCJwIjoiaiJ9
 # Job Listing App
 
 This project is a Job Listing application built using ASP.NET Core Web API and Entity Framework Core. It allows users to create, read, update, and delete job listings.
