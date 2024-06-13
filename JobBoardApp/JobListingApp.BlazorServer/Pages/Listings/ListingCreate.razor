@@ -1,0 +1,46 @@
+﻿@page "/listing/create"
+@using Blazored.FluentValidation
+@using JobListingApp.Application.Services
+@using JobListingApp.SharedKernel.Dto
+@using JobListingApp.Domain.Models
+@inject IListingService _listingService
+@inject NavigationManager _navigationManager
+<PageTitle>Create new job listing</PageTitle>
+
+<EditForm Model="@_listing" OnValidSubmit="@CreateListing">
+    <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
+    <ValidationSummary />
+    <div class="form-group">
+        <label>Title: </label>
+        <InputText @bind-Value="@_listing.Title" class="form-control" />
+        <ValidationMessage For="@(() => _listing.Title)" />
+    </div>
+    
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">
+            <span class="oi oi-pencil"></span>
+            Create
+        </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward"></span>
+            Back To List
+        </button>
+    </div>
+</EditForm>
+
+@code {
+    private CreateListingDto _listing = new();
+    private FluentValidationValidator? _fluentValidationValidator;
+
+    private void CreateListing()
+    {
+        _listingService.Create(_listing);
+        _navigationManager.NavigateTo("/listing");
+    }
+
+    private void BackToList()
+    {
+        _navigationManager.NavigateTo("/listing");
+    }
+}

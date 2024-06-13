@@ -1,0 +1,516 @@
+2024-06-12 22:27:52.2253|DEBUG|JobListingApp.WebApi.Program|init main
+2024-06-12 22:27:55.4920|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-06-12 22:27:56.3764|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-12 22:27:58.5332|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.17 initialized 'BoardDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.17' with options: None
+2024-06-12 22:27:58.6103|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:27:58.6432|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (27ms).
+2024-06-12 22:27:58.6730|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:58.7158|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:58.7292|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:58.7500|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (2ms).
+2024-06-12 22:27:58.7500|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:27:58.7500|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms).
+2024-06-12 22:27:58.7500|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:58.7620|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:58.7717|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:58.7717|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (7ms).
+2024-06-12 22:27:58.7882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:27:58.7882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms).
+2024-06-12 22:27:58.7882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:58.7882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:58.7882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:58.7882|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:27:58.8014|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:58.8014|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:58.8014|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-12 22:27:58.8280|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (9ms).
+2024-06-12 22:27:58.8322|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (18ms).
+2024-06-12 22:27:58.8322|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-06-12 22:27:58.9184|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (69ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-06-12 22:27:58.9275|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:58.9275|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:27:59.1769|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:59.1769|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:59.1769|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2024-06-12 22:27:59.2304|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'Serializable'.
+2024-06-12 22:27:59.2304|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-12 22:27:59.2304|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-12 22:27:59.2304|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2024-06-12 22:27:59.2304|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "JobCategories" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_JobCategories" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2024-06-12 22:27:59.2381|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "JobCategories" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_JobCategories" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2024-06-12 22:27:59.2381|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-12 22:27:59.2381|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-12 22:27:59.2381|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-12 22:27:59.2381|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Listings" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Listings" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Location" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "Company" TEXT NOT NULL,
+    "PostedDate" TEXT NOT NULL
+);
+2024-06-12 22:27:59.2381|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Listings" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Listings" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Location" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "Company" TEXT NOT NULL,
+    "PostedDate" TEXT NOT NULL
+);
+2024-06-12 22:27:59.2381|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2024-06-12 22:27:59.2610|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction.
+2024-06-12 22:27:59.2610|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2024-06-12 22:27:59.2610|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:59.2610|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:27:59.2708|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:27:59.2708|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms).
+2024-06-12 22:27:59.2708|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:59.2708|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:27:59.2708|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:27:59.2708|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:27:59.4436|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Listing>()
+    .Any()'
+2024-06-12 22:28:00.4611|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Listings AS l)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    JobListingApp.WebApi.Persistance.BoardDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2024-06-12 22:28:00.5622|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-06-12 22:28:00.5622|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:28:00.5622|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:28:00.5622|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:28:00.5622|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:28:00.5622|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Listings" AS "l")
+2024-06-12 22:28:00.5713|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Listings" AS "l")
+2024-06-12 22:28:00.5905|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:28:00.5905|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db' is being disposed after spending 18ms reading results.
+2024-06-12 22:28:00.5905|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:28:00.5905|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:28:00.7620|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'BoardDbContext' started tracking 'Listing' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:28:00.7620|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'BoardDbContext' started tracking 'Listing' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:28:00.7711|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'BoardDbContext'.
+2024-06-12 22:28:00.7711|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'BoardDbContext'.
+2024-06-12 22:28:00.8061|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'BoardDbContext'.
+2024-06-12 22:28:00.9403|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:28:00.9403|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:28:00.9403|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2024-06-12 22:28:00.9403|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'Serializable'.
+2024-06-12 22:28:00.9419|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-06-12 22:28:00.9419|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:28:00.9419|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-06-12 22:28:00.9569|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:28:00.9569|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db' is being disposed after spending 2ms reading results.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 10)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:28:00.9739|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 10)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db' is being disposed after spending 0ms reading results.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:28:00.9739|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2024-06-12 22:28:01.0067|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'Listing' tracked by 'BoardDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:28:01.0067|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'Listing' tracked by 'BoardDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:28:01.0067|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'BoardDbContext' with 2 entities written to the database.
+2024-06-12 22:28:01.0067|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'BoardDbContext' disposed.
+2024-06-12 22:28:01.0235|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:28:01.0235|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:28:01.0574|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-06-12 22:28:01.4593|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 434A465D1F77EFF23C2852B1BA432D93D895D5FD)
+2024-06-12 22:28:01.6174|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7245
+2024-06-12 22:28:01.6174|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5044
+2024-06-12 22:28:01.6174|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly JobListingApp.WebApi
+2024-06-12 22:28:01.6174|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-06-12 22:28:01.6174|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-06-12 22:28:01.6174|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-12 22:28:01.6174|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-12 22:28:01.6174|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\wikto\JobListingApp\JobListingApp\
+2024-06-12 22:28:01.6174|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-06-12 22:28:01.8734|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3OK2F559" received FIN.
+2024-06-12 22:28:01.8910|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3OK2F559" accepted.
+2024-06-12 22:28:01.8910|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3OK2F559" started.
+2024-06-12 22:28:01.9331|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-06-12 22:28:02.0745|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3OK2F559" stopped.
+2024-06-12 22:28:02.0745|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3OK2F559" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-12 22:28:02.7745|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3OK2F55A" accepted.
+2024-06-12 22:28:02.7745|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3OK2F55A" started.
+2024-06-12 22:28:02.9863|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN4B3OK2F55A established using the following protocol: Tls12
+2024-06-12 22:28:03.4135|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - -
+2024-06-12 22:28:04.6617|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-06-12 22:28:04.7625|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-06-12 22:28:04.7625|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-06-12 22:28:05.3880|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-06-12 22:28:05.4319|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-06-12 22:28:05.4436|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - - - 200 - text/html;charset=utf-8 2079.9672ms
+2024-06-12 22:28:05.4730|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - -
+2024-06-12 22:28:05.4730|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - -
+2024-06-12 22:28:05.5045|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 31.5110ms
+2024-06-12 22:28:05.6306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 153.0300ms
+2024-06-12 22:28:05.8555|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - -
+2024-06-12 22:28:05.8555|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-06-12 22:28:05.8555|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-06-12 22:28:06.0965|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 240.9732ms
+2024-06-12 22:28:13.3142|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/Listings - -
+2024-06-12 22:28:13.3218|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Listings'
+2024-06-12 22:28:13.3218|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)' with route pattern 'Listings' is valid for the request path '/Listings'
+2024-06-12 22:28:13.3218|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:13.3218|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:13.3218|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:13.3337|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:13.3488|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:13.4345|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/Listings - - - 500 - - 120.1994ms
+2024-06-12 22:28:21.1866|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/Listings - -
+2024-06-12 22:28:21.1866|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Listings'
+2024-06-12 22:28:21.1866|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)' with route pattern 'Listings' is valid for the request path '/Listings'
+2024-06-12 22:28:21.1866|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:21.1866|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:21.1866|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:21.1866|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:21.1866|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:21.2382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/Listings - - - 500 - - 51.5419ms
+2024-06-12 22:28:30.8511|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/Listings - -
+2024-06-12 22:28:30.8511|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Listings'
+2024-06-12 22:28:30.8511|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)' with route pattern 'Listings' is valid for the request path '/Listings'
+2024-06-12 22:28:30.8511|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:30.8511|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:30.8511|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:30.8511|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:30.8511|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:30.8924|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/Listings - - - 500 - - 41.3075ms
+2024-06-12 22:28:40.4153|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/Listings - -
+2024-06-12 22:28:40.4153|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Listings'
+2024-06-12 22:28:40.4153|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)' with route pattern 'Listings' is valid for the request path '/Listings'
+2024-06-12 22:28:40.4153|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:40.4153|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:40.4153|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:40.4153|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:40.4153|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:28:40.4608|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/Listings - - - 500 - - 45.5034ms
+2024-06-12 22:28:50.5440|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/File - -
+2024-06-12 22:28:50.5440|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/File'
+2024-06-12 22:28:50.5440|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.WebApi.Controllers.FileController.DownloadFile (JobListingApp.WebApi)' with route pattern 'File' is valid for the request path '/File'
+2024-06-12 22:28:50.5440|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.WebApi.Controllers.FileController.DownloadFile (JobListingApp.WebApi)'
+2024-06-12 22:28:50.5440|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:50.5440|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:28:50.5440|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.WebApi.Controllers.FileController.DownloadFile (JobListingApp.WebApi)'
+2024-06-12 22:28:50.5785|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "DownloadFile", controller = "File"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DownloadFile(System.String) on controller JobListingApp.WebApi.Controllers.FileController (JobListingApp.WebApi).
+2024-06-12 22:28:50.5785|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-06-12 22:28:50.5785|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-06-12 22:28:50.5785|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)
+2024-06-12 22:28:50.5785|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-06-12 22:28:50.5785|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None
+2024-06-12 22:28:50.5832|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller JobListingApp.WebApi.Controllers.FileController (JobListingApp.WebApi)
+2024-06-12 22:28:50.5832|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller JobListingApp.WebApi.Controllers.FileController (JobListingApp.WebApi)
+2024-06-12 22:28:50.6038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'fileName' of type 'System.String' ...
+2024-06-12 22:28:50.6038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'fileName' of type 'System.String' using the name '' in request data ...
+2024-06-12 22:28:50.6038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'fileName' of type 'System.String'.
+2024-06-12 22:28:50.6038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'fileName' of type 'System.String'.
+2024-06-12 22:28:50.6038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'fileName' of type 'System.String'.
+2024-06-12 22:28:50.6038|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'fileName' of type 'System.String' ...
+2024-06-12 22:28:50.6253|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'fileName' of type 'System.String'.
+2024-06-12 22:29:09.1962|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action JobListingApp.WebApi.Controllers.FileController.DownloadFile (JobListingApp.WebApi) in 18610.4573ms
+2024-06-12 22:29:09.1962|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.WebApi.Controllers.FileController.DownloadFile (JobListingApp.WebApi)'
+2024-06-12 22:29:09.2285|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/File - - - 500 - - 18684.5107ms
+2024-06-12 22:30:22.9895|DEBUG|JobListingApp.WebApi.Program|init main
+2024-06-12 22:30:24.0099|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-06-12 22:30:24.4059|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-06-12 22:30:25.6472|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.17 initialized 'BoardDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.17' with options: None
+2024-06-12 22:30:25.6947|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:30:25.7250|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (22ms).
+2024-06-12 22:30:25.7552|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:25.8013|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:25.8235|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:25.8446|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (5ms).
+2024-06-12 22:30:25.8446|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:30:25.8446|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms).
+2024-06-12 22:30:25.8446|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:25.8563|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:25.8563|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:25.8715|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (9ms).
+2024-06-12 22:30:25.8797|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:30:25.8797|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms).
+2024-06-12 22:30:25.8797|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:25.8797|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:25.8797|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:25.8797|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:30:25.8797|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:25.8940|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:25.8940|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-12 22:30:25.9241|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (7ms).
+2024-06-12 22:30:25.9321|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (22ms).
+2024-06-12 22:30:25.9504|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-06-12 22:30:25.9981|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2024-06-12 22:30:26.0054|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:26.0054|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:30:26.2273|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:26.2273|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:26.2273|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2024-06-12 22:30:26.2528|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'Serializable'.
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "JobCategories" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_JobCategories" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2024-06-12 22:30:26.2540|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "JobCategories" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_JobCategories" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL
+);
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Listings" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Listings" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Location" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "Company" TEXT NOT NULL,
+    "PostedDate" TEXT NOT NULL
+);
+2024-06-12 22:30:26.2540|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Listings" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Listings" PRIMARY KEY AUTOINCREMENT,
+    "Title" TEXT NOT NULL,
+    "Location" TEXT NOT NULL,
+    "Description" TEXT NOT NULL,
+    "Company" TEXT NOT NULL,
+    "PostedDate" TEXT NOT NULL
+);
+2024-06-12 22:30:26.2540|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2024-06-12 22:30:26.2785|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction.
+2024-06-12 22:30:26.2785|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2024-06-12 22:30:26.2785|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:26.2785|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:30:26.2785|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-06-12 22:30:26.2785|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms).
+2024-06-12 22:30:26.2785|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:26.2857|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:26.2857|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:26.2857|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:30:26.3542|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Listing>()
+    .Any()'
+2024-06-12 22:30:26.8980|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Listings AS l)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    JobListingApp.WebApi.Persistance.BoardDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()'
+2024-06-12 22:30:26.9515|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-06-12 22:30:26.9515|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:30:26.9515|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:30:26.9515|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:26.9515|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:26.9515|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Listings" AS "l")
+2024-06-12 22:30:26.9515|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Listings" AS "l")
+2024-06-12 22:30:26.9647|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:26.9647|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db' is being disposed after spending 9ms reading results.
+2024-06-12 22:30:26.9647|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:26.9647|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:30:27.0855|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'BoardDbContext' started tracking 'Listing' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:30:27.0855|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'BoardDbContext' started tracking 'Listing' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:30:27.0855|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'BoardDbContext'.
+2024-06-12 22:30:27.0855|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'BoardDbContext'.
+2024-06-12 22:30:27.1117|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'BoardDbContext'.
+2024-06-12 22:30:27.1844|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:27.1844|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:27.1844|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2024-06-12 22:30:27.1844|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'Serializable'.
+2024-06-12 22:30:27.1844|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-06-12 22:30:27.1844|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:30:27.1844|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-06-12 22:30:27.1951|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:30:27.1951|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 8), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 6)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db' is being disposed after spending 4ms reading results.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 10)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:30:27.2089|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 5), @p2='?' (Size = 38), @p3='?' (Size = 10), @p4='?' (DbType = DateTime), @p5='?' (Size = 10)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Listings" ("Id", "Company", "Description", "Location", "PostedDate", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db' is being disposed after spending 0ms reading results.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'main' on server 'C:\Users\wikto\JobListingApp\JobListingApp\JobListingApp.db'.
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:30:27.2089|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2024-06-12 22:30:27.2321|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'Listing' tracked by 'BoardDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:30:27.2321|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'Listing' tracked by 'BoardDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-06-12 22:30:27.2321|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'BoardDbContext' with 2 entities written to the database.
+2024-06-12 22:30:27.2398|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'BoardDbContext' disposed.
+2024-06-12 22:30:27.2398|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'main' on server 'JobListingApp.db'.
+2024-06-12 22:30:27.2398|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'main' on server 'JobListingApp.db' (0ms).
+2024-06-12 22:30:27.2398|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-06-12 22:30:27.4555|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 434A465D1F77EFF23C2852B1BA432D93D895D5FD)
+2024-06-12 22:30:27.5369|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7245
+2024-06-12 22:30:27.5369|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5044
+2024-06-12 22:30:27.5369|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly JobListingApp.WebApi
+2024-06-12 22:30:27.5369|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-06-12 22:30:27.5369|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-06-12 22:30:27.5369|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-12 22:30:27.5369|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-12 22:30:27.5369|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\wikto\JobListingApp\JobListingApp\
+2024-06-12 22:30:27.5369|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-06-12 22:30:27.8794|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QG" accepted.
+2024-06-12 22:30:27.8794|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QF" accepted.
+2024-06-12 22:30:27.8794|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QF" started.
+2024-06-12 22:30:27.8794|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QG" started.
+2024-06-12 22:30:27.8794|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QG" received FIN.
+2024-06-12 22:30:27.8794|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QF" received FIN.
+2024-06-12 22:30:27.9209|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-06-12 22:30:27.9209|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-06-12 22:30:27.9482|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QF" stopped.
+2024-06-12 22:30:27.9482|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QG" stopped.
+2024-06-12 22:30:27.9482|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-12 22:30:27.9482|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-12 22:30:31.4449|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QH" accepted.
+2024-06-12 22:30:31.4449|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QH" started.
+2024-06-12 22:30:31.5379|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN4B3PVIO2QH established using the following protocol: Tls12
+2024-06-12 22:30:31.6297|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - -
+2024-06-12 22:30:31.8082|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-06-12 22:30:31.8388|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-06-12 22:30:31.8388|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-06-12 22:30:32.1064|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-06-12 22:30:32.1424|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-06-12 22:30:32.1530|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - - - 200 - text/html;charset=utf-8 527.2023ms
+2024-06-12 22:30:32.1932|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - -
+2024-06-12 22:30:32.1932|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - -
+2024-06-12 22:30:32.1932|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - - - 200 12372 application/javascript;+charset=utf-8 8.7512ms
+2024-06-12 22:30:32.3077|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 114.1020ms
+2024-06-12 22:30:32.4729|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - -
+2024-06-12 22:30:32.4729|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-06-12 22:30:32.4729|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-06-12 22:30:32.7100|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.1377ms
+2024-06-12 22:30:38.5172|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/Listings - -
+2024-06-12 22:30:38.5243|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Listings'
+2024-06-12 22:30:38.5243|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)' with route pattern 'Listings' is valid for the request path '/Listings'
+2024-06-12 22:30:38.5243|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:38.5243|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:30:38.5243|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:30:38.5405|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:38.5553|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:38.6387|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/Listings - - - 500 - - 121.5255ms
+2024-06-12 22:30:41.8626|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QH" received FIN.
+2024-06-12 22:30:41.8634|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN4B3PVIO2QH" is closed. The last processed stream ID was 9.
+2024-06-12 22:30:41.8634|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-12 22:30:41.8634|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QH" stopped.
+2024-06-12 22:30:48.7648|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QI" accepted.
+2024-06-12 22:30:48.7648|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QI" started.
+2024-06-12 22:30:48.7762|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN4B3PVIO2QI established using the following protocol: Tls12
+2024-06-12 22:30:48.7762|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/Listings - -
+2024-06-12 22:30:48.8004|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Listings'
+2024-06-12 22:30:48.8004|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)' with route pattern 'Listings' is valid for the request path '/Listings'
+2024-06-12 22:30:48.8004|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:48.8004|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:30:48.8004|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:30:48.8004|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:48.8004|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:48.8352|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/Listings - - - 500 - - 55.9151ms
+2024-06-12 22:30:51.8656|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QI" received FIN.
+2024-06-12 22:30:51.8656|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN4B3PVIO2QI" is closed. The last processed stream ID was 1.
+2024-06-12 22:30:51.8656|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-12 22:30:51.8656|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QI" stopped.
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QJ" accepted.
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QJ" started.
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN4B3PVIO2QJ established using the following protocol: Tls12
+2024-06-12 22:30:58.4120|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7245/Listings/5 - -
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Listings/5'
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)' with route pattern 'Listings/{id}' is valid for the request path '/Listings/5'
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:30:58.4120|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-06-12 22:30:58.4120|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:58.4120|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'JobListingApp.Controllers.ListingsController.Get (JobListingApp.WebApi)'
+2024-06-12 22:30:58.4667|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7245/Listings/5 - - - 500 - - 50.7170ms
+2024-06-12 22:31:01.8825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QJ" received FIN.
+2024-06-12 22:31:01.8825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN4B3PVIO2QJ" is closed. The last processed stream ID was 1.
+2024-06-12 22:31:01.8825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN4B3PVIO2QJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-12 22:31:01.8825|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN4B3PVIO2QJ" stopped.

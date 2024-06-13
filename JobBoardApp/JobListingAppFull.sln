@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.Application", "JobListingApp.Application\JobListingApp.Application.csproj", "{0C6881C3-F20B-4D5A-B3DD-1BDBAB9895BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.Domain", "JobListingApp.Domain\JobListingApp.Domain.csproj", "{3CFC86AE-9DC9-46FB-84DA-8BB5EFB9E573}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.Infrastructure", "JobListingApp.Infrastructure\JobListingApp.Infrastructure.csproj", "{D5446C61-2880-48F4-94D8-F28F74698607}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.SharedKernel", "JobListingAppSharedKernel\JobListingApp.SharedKernel.csproj", "{DC56143B-1E7A-4382-B9A3-8DA9E7C505D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.Web.API", "JobListingApp.Web.API\JobListingApp.Web.API.csproj", "{C3DCC3E4-A989-4857-A6ED-3A8B51754FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobListingApp.BlazorServer", "JobListingApp.BlazorServer\JobListingApp.BlazorServer.csproj", "{55D48D84-302E-4507-8B82-AE14183C468E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C6881C3-F20B-4D5A-B3DD-1BDBAB9895BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6881C3-F20B-4D5A-B3DD-1BDBAB9895BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6881C3-F20B-4D5A-B3DD-1BDBAB9895BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6881C3-F20B-4D5A-B3DD-1BDBAB9895BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFC86AE-9DC9-46FB-84DA-8BB5EFB9E573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFC86AE-9DC9-46FB-84DA-8BB5EFB9E573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFC86AE-9DC9-46FB-84DA-8BB5EFB9E573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFC86AE-9DC9-46FB-84DA-8BB5EFB9E573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5446C61-2880-48F4-94D8-F28F74698607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5446C61-2880-48F4-94D8-F28F74698607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5446C61-2880-48F4-94D8-F28F74698607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5446C61-2880-48F4-94D8-F28F74698607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC56143B-1E7A-4382-B9A3-8DA9E7C505D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC56143B-1E7A-4382-B9A3-8DA9E7C505D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC56143B-1E7A-4382-B9A3-8DA9E7C505D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC56143B-1E7A-4382-B9A3-8DA9E7C505D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DCC3E4-A989-4857-A6ED-3A8B51754FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DCC3E4-A989-4857-A6ED-3A8B51754FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DCC3E4-A989-4857-A6ED-3A8B51754FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DCC3E4-A989-4857-A6ED-3A8B51754FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D48D84-302E-4507-8B82-AE14183C468E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D48D84-302E-4507-8B82-AE14183C468E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D48D84-302E-4507-8B82-AE14183C468E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D48D84-302E-4507-8B82-AE14183C468E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8F41DD1-781B-4422-8B8C-B4A0D536674A}
+	EndGlobalSection
+EndGlobal

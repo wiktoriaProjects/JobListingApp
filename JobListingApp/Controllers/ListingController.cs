@@ -4,6 +4,8 @@ using JobListingApp.Dto;
 using JobListingApp.Persistance;
 using System.Reflection;
 using JobListingApp.WebApi.Services;
+using FluentValidation;
+using JobListingApp.WebApi.Exceptions;
 
 
 namespace JobListingApp.Controllers
@@ -13,19 +15,34 @@ namespace JobListingApp.Controllers
     public class ListingsController : Controller
     {
        private readonly IListingService _listingService;
-       
-       public ListingsController(IListingService listingService)
+        private readonly ILogger<ListingsController> _logger;
+       //private readonly IValidator<CreateListingDto> _validator;
+        
+        //inejction of vlaidator
+        //public ListingsController(IListingService listingService, IValidator<CreateListingDto> validator)
+        //{
+        //    this._listingService = listingService;
+        //    _validator = validator;
+        //}
+
+        //public ListingsController(IListingService listingService)
+        //{
+        //    this._listingService = listingService;
+        //}
+
+        public ListingsController(IListingService listingService, ILogger<ListingsController> logger)
         {
             this._listingService = listingService;
+            this._logger = logger;
         }
-
 
         [HttpGet]
         public ActionResult<IEnumerable<Listing>> Get()
         {
+            
             var result = _listingService.GetAll();
+            _logger.LogDebug("Downloading all the listings finished");
             return Ok(result);
-
 
         }
 
@@ -37,6 +54,7 @@ namespace JobListingApp.Controllers
         public ActionResult<Listing> Get(int id)
         {
             var result = _listingService.GetById(id);
+            _logger.LogDebug($"Downloaded the listing with id = {id}");
             return Ok(result);
         }
 
@@ -46,8 +64,15 @@ namespace JobListingApp.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult Create([FromBody] CreateListingDto dto)
         {
-            int id = _listingService.Create(dto);
-            return Ok(id);
+            
+            var id = _listingService.Create(dto);
+            _logger.LogDebug($"Created new listing with id  = {id}");  
+            var actionName = nameof(Get);
+            var routeValues = new { id };
+            return CreatedAtAction(actionName, routeValues, null);
+
+            //int id = _listingService.Create(dto);
+            //return Ok(id);
         }
 
         //DELETE
@@ -67,7 +92,13 @@ namespace JobListingApp.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult Update(int id, [FromBody] UpdateListingDto dto)
         {
-            return Ok(id);
+            if(id != dto.Id)
+            {
+                throw new BadRequestException("Give Id is wrong");
+            }
+            _listingService.Update(dto);
+            _logger.LogDebug($"Listing with id = {id} is actual");
+            return NoContent();
 
         }
 

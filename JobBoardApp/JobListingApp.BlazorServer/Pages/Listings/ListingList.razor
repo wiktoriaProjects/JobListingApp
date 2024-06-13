@@ -1,0 +1,79 @@
+﻿
+
+@page "/listing"
+@using JobListingApp.Application.Services
+@using JobListingApp.Domain.Models
+@using JobListingApp.SharedKernel.Dto
+@inject IListingService _listingService
+@inject NavigationManager _navigationManager
+@inject IJSRuntime _js
+
+<PageTitle>Job Listings</PageTitle>
+<h1>Job Listings</h1>
+<br/>
+<div>
+
+        <div>
+            <a href="listing/create" class="btn bg-primary"><span class="oi oi-plus" aria-hidden="true"></span> Create new job listing </a>
+        </div>
+<br />
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Posted Date</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var listing in _listingList)
+        {
+            <tr>
+                <td>@listing.Title</td>
+                <td>@listing.Description</td>
+                <td>@listing.Location</td>
+                <td>@listing.PostedDate.ToString("yyyy-MM-dd")</td>
+                <td>@listing.Company</td>
+                    <td>
+                        <button class="btn bg-warning" @onclick="@(()=>EditListing(@listing.Id))"><span class="oi oi-pencil" aria-hidden="true"></span> Edit </button>
+                        <button class="btn bg-danger" @onclick="@(()=>DeleteListing(@listing.Id))"><span class="oi oi-delete" aria-hidden="true"></span> Delete </button>
+                        
+                    </td>
+            </tr>
+        }
+
+        </tbody>
+
+    </table>
+</div>
+@code {
+
+
+    private List<ListingDto> _listingList = null;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _listingList = _listingService.GetAll();
+    }
+
+    protected async Task DeleteListing(int id)
+    {
+        var listing = _listingList.First(q => q.Id == id);
+        var confirm = await _js.InvokeAsync<bool>("confirm", $"Are You Sure You Want To Delete {listing.Title}?");
+        if (confirm)
+        {
+            _listingService.Delete(id);
+            OnInitialized();
+        }
+    }
+    protected void EditListing(int id)
+    {
+        _navigationManager.NavigateTo($"listing/edit/{id}");
+    }
+
+}

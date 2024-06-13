@@ -1,0 +1,20 @@
+2024-06-13 00:00:06.1681|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 00:08:18.1240|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 11:34:09.1567|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 11:36:22.3869|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 11:38:00.8800|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 12:02:49.4864|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 12:03:37.5718|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 12:11:24.6055|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 13:40:36.6828|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 13:48:46.0899|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 13:57:35.0839|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 14:01:46.5392|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 14:07:08.4964|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 14:18:31.3185|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 14:23:29.9321|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 14:25:46.8751|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 14:26:12.5570|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-13 14:26:19.5480|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-13 14:27:24.1217|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-13 14:28:13.3036|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished

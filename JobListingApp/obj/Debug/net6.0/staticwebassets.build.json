@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "c7rB08JB2Df+6YjCuiQKLQ9eVPYya9gDIgBL/lppmMs=",
-  "Source": "JobListingApp.WebApi",
-  "BasePath": "_content/JobListingApp.WebApi",
+  "Hash": "RQCfpNFhqjLtkPSvdINP0sB+3+4bfPunxCyoCMVDPLI=",
+  "Source": "JobListingAppX.WebApi",
+  "BasePath": "_content/JobListingAppX.WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

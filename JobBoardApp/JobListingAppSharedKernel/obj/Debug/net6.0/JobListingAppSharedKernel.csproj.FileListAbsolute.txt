@@ -1,0 +1,12 @@
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\bin\Debug\net6.0\JobListingAppSharedKernel.deps.json
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\bin\Debug\net6.0\JobListingAppSharedKernel.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\bin\Debug\net6.0\JobListingAppSharedKernel.pdb
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\JobListingAppSharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\JobListingAppSharedKernel.AssemblyInfoInputs.cache
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\JobListingAppSharedKernel.AssemblyInfo.cs
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\JobListingAppSharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\JobListingAppSharedKernel.sourcelink.json
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\JobListingAppSharedKernel.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\refint\JobListingAppSharedKernel.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\JobListingAppSharedKernel.pdb
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingAppSharedKernel\obj\Debug\net6.0\ref\JobListingAppSharedKernel.dll

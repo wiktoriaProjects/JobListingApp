@@ -1,0 +1,23 @@
+2024-06-13 00:00:36.1930|ERROR|JobListingApp.WebApi.Middleware.ExceptionMiddleware|Unable to resolve service for type 'JobListingApp.WebApi.Services.IJobCategoryService' while attempting to activate 'JobListingApp.WebApi.Controllers.JobCategoriesController'.
+2024-06-13 00:00:39.6942|ERROR|JobListingApp.WebApi.Middleware.ExceptionMiddleware|Unable to resolve service for type 'JobListingApp.WebApi.Services.IJobCategoryService' while attempting to activate 'JobListingApp.WebApi.Controllers.JobCategoriesController'.
+2024-06-13 00:00:40.7100|ERROR|JobListingApp.WebApi.Middleware.ExceptionMiddleware|Unable to resolve service for type 'JobListingApp.WebApi.Services.IJobCategoryService' while attempting to activate 'JobListingApp.WebApi.Controllers.JobCategoriesController'.
+2024-06-13 00:01:11.3529|ERROR|JobListingApp.WebApi.Middleware.ExceptionMiddleware|Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[JobListingApp.Models.Listing, JobListingApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[JobListingApp.Dto.ListingDto, JobListingApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2024-06-13 00:08:55.5307|ERROR|JobListingApp.WebApi.Middleware.ExceptionMiddleware|Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[JobListingApp.Models.Listing, JobListingApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[JobListingApp.Dto.ListingDto, JobListingApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2024-06-13 13:49:30.4834|ERROR|JobListingApp.Web.API.Middleware.ExceptionMiddleware|Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[JobListingApp.Domain.Models.Listing, JobListingApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[JobListingApp.Application.Dto.ListingDto, JobListingApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2024-06-13 14:02:14.1229|ERROR|JobListingApp.Web.API.Middleware.ExceptionMiddleware|Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[JobListingApp.Domain.Models.Listing, JobListingApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[JobListingApp.Application.Dto.ListingDto, JobListingApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]

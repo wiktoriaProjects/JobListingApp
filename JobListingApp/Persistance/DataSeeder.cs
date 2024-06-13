@@ -1,6 +1,6 @@
 ﻿using JobListingApp.Models;
 using Microsoft.EntityFrameworkCore;
-
+using System.Linq.Expressions;
 namespace JobListingApp.WebApi.Persistance
 {
     public class DataSeeder

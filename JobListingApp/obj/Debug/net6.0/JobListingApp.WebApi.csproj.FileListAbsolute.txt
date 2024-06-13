@@ -79,3 +79,11 @@ C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\runtimes\linux-ppc64
 C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
 C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
 C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\nlog.config
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\NLog.dll
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\wikto\JobListingApp\JobListingApp\bin\Debug\net6.0\NLog.Web.AspNetCore.dll

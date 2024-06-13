@@ -1,0 +1,77 @@
+﻿
+
+@page "/listing/edit/{id:int}"
+@using Blazored.FluentValidation
+@using JobListingApp.Application.Services
+@using JobListingApp.SharedKernel.Dto
+@using JobListingApp.Domain.Models
+@inject IListingService _listingService
+@inject NavigationManager _navigationManager
+
+<PageTitle>Edit Job Listingt</PageTitle>
+<h1>Edit listing</h1>
+
+  <EditForm Model="@_listing" OnSubmit="@UpdateListing">
+    <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
+
+
+    <ValidationSummary />
+    <div class="form-group">
+        <label for="title">Title</label>
+        <InputText id="title" class="form-control" @bind-Value="_listing.Title" />
+        <ValidationMessage For="@(() => _listing.Title)" />
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="_listing.Description" />
+        <ValidationMessage For="@(() => _listing.Description)" />
+    </div>
+
+    <div class="form-group">
+        <label for="location">Location</label>
+        <InputText id="location" class="form-control" @bind-Value="_listing.Location" />
+        <ValidationMessage For="@(() => _listing.Location)" />
+    </div>
+
+    <div class="form-group">
+        <label for="postedDate">Posted Date</label>
+        <InputDate id="postedDate" class="form-control" @bind-Value="_listing.PostedDate" />
+        <ValidationMessage For="@(() => _listing.PostedDate)" />
+    </div>
+
+    <div class="form-group">
+        <label for="company">Company</label>
+        <InputText id="company" class="form-control" @bind-Value="_listing.Company" />
+        <ValidationMessage For="@(() => _listing.Company)" />
+    </div>
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit"> <span class="oi oi-pencil"></span> Update </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward" />
+            Back To List
+        </button>
+    </div>
+</EditForm> 
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    private FluentValidationValidator? _fluentValidationValidator;
+    private UpdateListingDto _listing = null;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        var l = _listingService.GetById(Id);
+        _listing = new UpdateListingDto() { Id = l.Id, Title = l.Title, Description = l.Description, Company = l.Company, Location = l.Location, PostedDate = l.PostedDate };
+    }
+    private void UpdateListing()
+    {
+        _listingService.Update(_listing);
+        _navigationManager.NavigateTo("/listing");
+    }
+    private void BackToList()
+    {
+        _navigationManager.NavigateTo("/listing");
+    }
+}

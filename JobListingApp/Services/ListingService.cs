@@ -2,68 +2,59 @@
 using JobListingApp.Dto;
 using JobListingApp.Persistance;
 using JobListingApp.WebApi.Persistance;
-using Microsoft.AspNetCore.Mvc;
-using System.Reflection;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using JobListingApp.WebApi.Exceptions;
+using AutoMapper;
+
 
 namespace JobListingApp.WebApi.Services
 {
     public class ListingService : IListingService
     {
         private readonly IBoardUnitOfWork _uow;
-
+        private readonly IMapper _mapper;
         //injection constructor
-        public ListingService(IBoardUnitOfWork context)
+        public ListingService(IBoardUnitOfWork unitOfWork)
+        {
+            this._uow = unitOfWork;
+        }
+        public ListingService(IBoardUnitOfWork context, IMapper mapper)
         {
             this._uow = context;
+            this._mapper = mapper;
         }
+
 
         public List<ListingDto> GetAll()
         {
             var listings = _uow.ListingRepository.GetAll();
-
-            List<ListingDto> result = new List<ListingDto>();
-            foreach (var l in listings)
-            {
-                result.Add(new ListingDto()
-                {
-                    Id = l.Id,
-                    Title = l.Title,
-                    Location = l.Location,
-                    Description = l.Description,
-                    Company = l.Company,
-                    PostedDate = l.PostedDate
-                    //CategoryId = l.Category.Id
-
-                });
-            }
+            List<ListingDto> result = _mapper.Map<List<ListingDto>>(listings);
             return result;
         }
-
 
 
         public ListingDto GetById(int id)
         {
             if (id <= 0)
             {
-                throw new Exception("Id is less than zero");
+                throw new BadRequestException("Id is less than zero");
             }
             var l = _uow.ListingRepository.Get(id);
             if (l == null)
             {
-                throw new Exception($"Could not find listing with id = {id}");
+                throw new NotFoundException("Could not find listing ");
             }
-            var result = new ListingDto()
-            {
-                Id = l.Id,
-                Title = l.Title,
-                Location = l.Location,
-                Description = l.Description,
-                Company = l.Company,
-                PostedDate = l.PostedDate
+            //var result = new ListingDto()
+            //{
+            //    Id = l.Id,
+            //    Title = l.Title,
+            //    Location = l.Location,
+            //    Description = l.Description,
+            //    Company = l.Company,
+            //    PostedDate = l.PostedDate
 
-
-            };
+            //};
+            var result = _mapper.Map<ListingDto>(l);
             return result;
         }
 
@@ -71,20 +62,11 @@ namespace JobListingApp.WebApi.Services
         {
             if (dto == null)
             {
-                throw new Exception("No Lisitng data");
+                throw new BadRequestException("No Lisitng data");
             }
             var id = _uow.ListingRepository.GetMaxId() + 1;
-
-            var listing = new Listing()
-            {
-                Id = id,
-                Title = dto.Title,
-                Location = dto.Location,
-                Description = dto.Description,
-                Company = dto.Company,
-                PostedDate = dto.PostedDate
-            };
-
+            var listing = _mapper.Map<Listing>(dto);
+            listing.Id = id;
             _uow.ListingRepository.Insert(listing);
             _uow.Commit();
             return id;
@@ -94,12 +76,12 @@ namespace JobListingApp.WebApi.Services
         {
             if (dto == null)
             {
-                throw new Exception("No Lisitng data");
+                throw new BadRequestException("No Lisitng data");
             }
             var l = _uow.ListingRepository.Get(dto.Id);
             if (l == null)
             {
-                throw new Exception($"Could not find");
+                throw new NotFoundException("Could not find");
             }
             l.Title = dto.Title;
             l.Location = dto.Location;
@@ -115,7 +97,7 @@ namespace JobListingApp.WebApi.Services
             var listing = _uow.ListingRepository.Get(id);
             if (listing == null)
             {
-                throw new Exception($"Could not find listing with id = {id}");
+                throw new NotFoundException("Could not find this listing ");
 
             }
 

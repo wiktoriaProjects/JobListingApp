@@ -1,0 +1,16 @@
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\bin\Debug\net6.0\JobListingApp.Application.deps.json
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\bin\Debug\net6.0\JobListingApp.Application.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\bin\Debug\net6.0\JobListingApp.Application.pdb
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\bin\Debug\net6.0\JobListingApp.Domain.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\bin\Debug\net6.0\JobListingApp.Domain.pdb
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.csproj.AssemblyReference.cache
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.AssemblyInfoInputs.cache
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.AssemblyInfo.cs
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.sourcelink.json
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.csproj.CopyComplete
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\refint\JobListingApp.Application.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\JobListingApp.Application.pdb
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Application\obj\Debug\net6.0\ref\JobListingApp.Application.dll
