@@ -1,8 +1,0 @@
-2024-06-13 00:02:37.8276|DEBUG|JobListingApp.WebApi.Program|init main
-2024-06-13 00:02:57.5667|DEBUG|JobListingApp.Controllers.ListingsController|Downloading all the listings finished
-2024-06-13 00:16:08.6843|DEBUG|JobListingAppX.WebApi.Program|init main
-2024-06-13 00:16:29.7565|DEBUG|JobListingApp.Controllers.ListingsController|Downloading all the listings finished
-2024-06-13 11:50:57.1381|DEBUG|JobListingAppX.WebApi.Program|init main
-2024-06-13 11:52:23.4669|DEBUG|JobListingApp.Controllers.ListingsController|Downloading all the listings finished
-2024-06-13 11:58:30.0977|DEBUG|JobListingAppX.WebApi.Program|init main
-2024-06-13 12:00:18.3200|DEBUG|JobListingApp.Controllers.ListingsController|Downloading all the listings finished
