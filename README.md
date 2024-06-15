@@ -13,7 +13,7 @@ MORE >> karta projektu [docs](https://docs.google.com/document/d/10jgVpblVkaSW4z
 ## Prerequisites
 
 - [.NET SDK](https://dotnet.microsoft.com/download) (version 6.0 or higher)
-- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (or any other compatible database)
+- [SQLite]
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ Follow these steps to set up and run the project locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/JobListingApp.git
+git clone https://github.com/wiktoriaProjects/JobListingApp.git
 cd JobListingApp
 etc..
 
