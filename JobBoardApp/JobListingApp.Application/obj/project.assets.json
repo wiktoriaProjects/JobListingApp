@@ -286,6 +286,16 @@
         "runtime": {
           "bin/placeholder/JobListingApp.Domain.dll": {}
         }
+      },
+      "JobListingApp.SharedKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/JobListingApp.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JobListingApp.SharedKernel.dll": {}
+        }
       }
     }
   },
@@ -682,6 +692,11 @@
       "type": "project",
       "path": "../JobListingApp.Domain/JobListingApp.Domain.csproj",
       "msbuildProject": "../JobListingApp.Domain/JobListingApp.Domain.csproj"
+    },
+    "JobListingApp.SharedKernel/1.0.0": {
+      "type": "project",
+      "path": "../JobListingAppSharedKernel/JobListingApp.SharedKernel.csproj",
+      "msbuildProject": "../JobListingAppSharedKernel/JobListingApp.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -689,6 +704,7 @@
       "AutoMapper >= 13.0.1",
       "FluentValidation.AspNetCore >= 11.3.0",
       "JobListingApp.Domain >= 1.0.0",
+      "JobListingApp.SharedKernel >= 1.0.0",
       "NLog.Web.AspNetCore >= 5.3.11"
     ]
   },
@@ -721,6 +737,9 @@
           "projectReferences": {
             "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.Domain\\JobListingApp.Domain.csproj": {
               "projectPath": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.Domain\\JobListingApp.Domain.csproj"
+            },
+            "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingAppSharedKernel\\JobListingApp.SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingAppSharedKernel\\JobListingApp.SharedKernel.csproj"
             }
           }
         }

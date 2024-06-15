@@ -772,6 +772,7 @@
           "AutoMapper": "13.0.1",
           "FluentValidation.AspNetCore": "11.3.0",
           "JobListingApp.Domain": "1.0.0",
+          "JobListingApp.SharedKernel": "1.0.0",
           "NLog.Web.AspNetCore": "5.3.11"
         },
         "compile": {
@@ -804,6 +805,16 @@
         },
         "runtime": {
           "bin/placeholder/JobListingApp.Infrastructure.dll": {}
+        }
+      },
+      "JobListingApp.SharedKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/JobListingApp.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JobListingApp.SharedKernel.dll": {}
         }
       }
     }
@@ -1789,6 +1800,11 @@
       "type": "project",
       "path": "../JobListingApp.Infrastructure/JobListingApp.Infrastructure.csproj",
       "msbuildProject": "../JobListingApp.Infrastructure/JobListingApp.Infrastructure.csproj"
+    },
+    "JobListingApp.SharedKernel/1.0.0": {
+      "type": "project",
+      "path": "../JobListingAppSharedKernel/JobListingApp.SharedKernel.csproj",
+      "msbuildProject": "../JobListingAppSharedKernel/JobListingApp.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {

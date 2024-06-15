@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.SharedKernel"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.Web.API", "JobListingApp.Web.API\JobListingApp.Web.API.csproj", "{C3DCC3E4-A989-4857-A6ED-3A8B51754FE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobListingApp.BlazorServer", "JobListingApp.BlazorServer\JobListingApp.BlazorServer.csproj", "{55D48D84-302E-4507-8B82-AE14183C468E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.BlazorServer", "JobListingApp.BlazorServer\JobListingApp.BlazorServer.csproj", "{55D48D84-302E-4507-8B82-AE14183C468E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobListingApp.BlazorClient", "JobListingApp.BlazorClient\JobListingApp.BlazorClient.csproj", "{5DC76A00-3D09-4D6F-BCA5-31ED806E216F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{55D48D84-302E-4507-8B82-AE14183C468E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55D48D84-302E-4507-8B82-AE14183C468E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55D48D84-302E-4507-8B82-AE14183C468E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC76A00-3D09-4D6F-BCA5-31ED806E216F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC76A00-3D09-4D6F-BCA5-31ED806E216F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC76A00-3D09-4D6F-BCA5-31ED806E216F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC76A00-3D09-4D6F-BCA5-31ED806E216F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

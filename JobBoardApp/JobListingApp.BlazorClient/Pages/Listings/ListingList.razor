@@ -1,0 +1,68 @@
+﻿@* @page "/listing"
+@using JobListingApp.SharedKernel.Dto
+<PageTitle>Job listings</PageTitle>
+<h1>Job offers</h1>
+<div class="row">
+ @foreach (var l in _listingList)
+ {
+ <div class="card m-2" style="width: 18rem;">
+ <img class="card-img-top" src="..." alt="Card image cap">
+ <div class="card-body">
+ <h5 class="card-title">@l.Title</h5>
+ <p class="card-text">@l.Description</p>
+ <p class="card-text">@l.Company</p>
+ <p class="card-text">@l.Location</p>
+ <a href="#" class="btn btn-primary">Add to saved</a>
+ </div>
+ </div>
+ }
+</div>
+@code {
+ private List<ListingDto> _listingList = new List<ListingDto>()
+ {
+ new ListingDto() { Title = "Dev", Company = "Meta", Description = "Gooddkk", Location = "LA" },
+
+ };
+ public class ListingDto
+ {
+ public string Title { get; set; }
+ public string Description { get; set; }
+ public string Company { get; set; }
+ public string Location { get; set; }
+ }
+} 
+ *@
+ @page "/listing"
+@using JobListingApp.SharedKernel.Dto
+@inherits LayoutComponentBase
+
+
+<PageTitle>Job Listings</PageTitle>
+<h1>Job Offers</h1>
+
+<div class="row">
+    @foreach (var listing in _listingList)
+    {
+        <div class="job-item card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">@listing.Title</h5>
+                <p class="card-text">@listing.Description</p>
+                <p class="card-text">Company: @listing.Company</p>
+                <p class="card-text">Location: @listing.Location</p>
+                <a href="#" class="btn btn-primary">Apply</a>
+                <a href="#" class="btn btn-outline-primary ml-2">Save</a>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private List<ListingDto> _listingList = new List<ListingDto>()
+    {
+        new ListingDto() { Title = "Software Engineer", Company = "Tech Corp", Description = "Developing new software solutions", Location = "San Francisco" },
+        new ListingDto() { Title = "Data Analyst", Company = "Data Insights", Description = "Analyzing data trends and patterns", Location = "New York" },
+        new ListingDto() { Title = "UX/UI Designer", Company = "Design Studio", Description = "Creating intuitive user interfaces", Location = "Los Angeles" },
+    };
+
+    
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobListingApp.SharedKernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc4223719f6ed596523875120abb09a447eae013")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b71cd5b701eb3bb290e2340459936fd5594e1f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobListingApp.SharedKernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobListingApp.SharedKernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
