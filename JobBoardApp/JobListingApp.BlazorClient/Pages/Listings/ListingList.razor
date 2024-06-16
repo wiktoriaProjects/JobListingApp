@@ -33,9 +33,8 @@
 } 
  *@
  @page "/listing"
-@using JobListingApp.SharedKernel.Dto
 @inherits LayoutComponentBase
-
+@inject IListingService _listingService
 
 <PageTitle>Job Listings</PageTitle>
 <h1>Job Offers</h1>
@@ -44,25 +43,45 @@
     @foreach (var listing in _listingList)
     {
         <div class="job-item card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">@listing.Title</h5>
-                <p class="card-text">@listing.Description</p>
-                <p class="card-text">Company: @listing.Company</p>
-                <p class="card-text">Location: @listing.Location</p>
-                <a href="#" class="btn btn-primary">Apply</a>
-                <a href="#" class="btn btn-outline-primary ml-2">Save</a>
-            </div>
+             <EditForm Model="@listing" onclick="@(() => AddToLiked(@listing))">
+                <img class="card-img-top" src="..." alt="Card image cap"> 
+
+                <div class="card-body">
+                    <h5 class="card-title">@listing.Title</h5>
+                    @* <p class="card-text">@listing.Description</p> *@
+                    <p class="card-text">Company: @listing.Company</p>
+                    <p class="card-text">Location: @listing.Location</p>
+
+                   @*  <div class="form-group">
+                        <label for="countInput">Count:</label>
+                        <InputNumber id="countInput" @bind-Value="@listing.Count"></InputNumber>
+                    </div> *@
+
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+             </EditForm> 
+
         </div>
     }
 </div>
 
 @code {
-    private List<ListingDto> _listingList = new List<ListingDto>()
+    public int Count { get; set; } = 1;
+    private IEnumerable<ListingDto> _listingList = new List<ListingDto>();
+    protected override async Task OnInitializedAsync()
     {
-        new ListingDto() { Title = "Software Engineer", Company = "Tech Corp", Description = "Developing new software solutions", Location = "San Francisco" },
-        new ListingDto() { Title = "Data Analyst", Company = "Data Insights", Description = "Analyzing data trends and patterns", Location = "New York" },
-        new ListingDto() { Title = "UX/UI Designer", Company = "Design Studio", Description = "Creating intuitive user interfaces", Location = "Los Angeles" },
-    };
+        _listingList = await _listingService.GetAll();
+    }
+    private async Task AddToLiked(ListingDto listing)
+    {
+       
+    }
+    // private List<ListingDto> _listingList = new List<ListingDto>()
+    // {
+    //     new ListingDto() { Title = "Software Engineer", Company = "Tech Corp", Description = "Developing new software solutions", Location = "San Francisco" },
+    //     new ListingDto() { Title = "Data Analyst", Company = "Data Insights", Description = "Analyzing data trends and patterns", Location = "New York" },
+    //     new ListingDto() { Title = "UX/UI Designer", Company = "Design Studio", Description = "Creating intuitive user interfaces", Location = "Los Angeles" },
+    // };
 
     
 }

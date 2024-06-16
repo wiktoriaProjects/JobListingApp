@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\JobListingApp.BlazorClient.styles.css"
     },
     {
+      "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
       "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

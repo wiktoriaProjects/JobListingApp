@@ -12,6 +12,7 @@ using JobListingApp.SharedKernel.Dto;
 using JobListingApp.Application.Services;
 using JobListingApp.Web.API.Middleware;
 using AutoMapper;
+using Microsoft.Extensions.Configuration;
 
 
 
@@ -54,9 +55,15 @@ try
     // rejestracja exception middleware-a w kontenerze IoC
     builder.Services.AddScoped<IListingService, ListingService>();
     builder.Services.AddScoped<ExceptionMiddleware>();
+    // rejestruje w kontenerze zależności politykę CORS o nazwie SaleKiosk,
+    // która zapewnia dostęp do API z dowolnego miejsca oraz przy pomocy dowolnej metody
+    builder.Services.AddCors(o => o.AddPolicy("JobBoard", builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    }));
     var app = builder.Build();
 
-
+   
 
 
     // Configure the HTTP request pipeline.
@@ -72,6 +79,7 @@ try
     app.UseAuthorization();
 
     app.MapControllers();
+    app.UseCors("JobBoard");
     // uruchomienie seedera
     using (var scope = app.Services.CreateScope())
     {

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.Web.API", "Jo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.BlazorServer", "JobListingApp.BlazorServer\JobListingApp.BlazorServer.csproj", "{55D48D84-302E-4507-8B82-AE14183C468E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobListingApp.BlazorClient", "JobListingApp.BlazorClient\JobListingApp.BlazorClient.csproj", "{5DC76A00-3D09-4D6F-BCA5-31ED806E216F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobListingApp.BlazorClient", "JobListingApp.BlazorClient\JobListingApp.BlazorClient.csproj", "{5DC76A00-3D09-4D6F-BCA5-31ED806E216F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

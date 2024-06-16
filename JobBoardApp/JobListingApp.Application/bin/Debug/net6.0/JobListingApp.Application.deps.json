@@ -11,6 +11,7 @@
           "AutoMapper": "13.0.1",
           "FluentValidation.AspNetCore": "11.3.0",
           "JobListingApp.Domain": "1.0.0",
+          "JobListingApp.SharedKernel": "1.0.0",
           "NLog.Web.AspNetCore": "5.3.11"
         },
         "runtime": {
@@ -135,6 +136,11 @@
         "runtime": {
           "JobListingApp.Domain.dll": {}
         }
+      },
+      "JobListingApp.SharedKernel/1.0.0": {
+        "runtime": {
+          "JobListingApp.SharedKernel.dll": {}
+        }
       }
     }
   },
@@ -257,6 +263,11 @@
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
     "JobListingApp.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JobListingApp.SharedKernel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

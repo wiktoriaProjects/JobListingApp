@@ -77,3 +77,26 @@ a, .btn-link {
     .job-item .btn-group {
         margin-top: 20px;
     }
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-primary, .btn-outline-primary {
+    border-radius: 20px;
+}
+
+.text-center {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+}

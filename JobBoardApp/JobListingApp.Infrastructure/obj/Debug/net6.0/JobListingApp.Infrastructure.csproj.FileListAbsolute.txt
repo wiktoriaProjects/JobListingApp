@@ -16,3 +16,5 @@ C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Infrastructure\obj\Debug\
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Infrastructure\obj\Debug\net6.0\refint\JobListingApp.Infrastructure.dll
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Infrastructure\obj\Debug\net6.0\JobListingApp.Infrastructure.pdb
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Infrastructure\obj\Debug\net6.0\ref\JobListingApp.Infrastructure.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Infrastructure\bin\Debug\net6.0\JobListingApp.SharedKernel.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Infrastructure\bin\Debug\net6.0\JobListingApp.SharedKernel.pdb

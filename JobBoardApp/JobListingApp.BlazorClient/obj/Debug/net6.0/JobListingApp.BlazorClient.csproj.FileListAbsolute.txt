@@ -826,3 +826,7 @@ C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\bin\Debug\ne
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\bin\Debug\net6.0\JobListingApp.SharedKernel.pdb
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\obj\Debug\net6.0\compressed\xg3ndm4s78.gz
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\obj\Debug\net6.0\compressed\idu8iht4ud.gz
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorClient\obj\Debug\net6.0\compressed\kflusu83fq.gz

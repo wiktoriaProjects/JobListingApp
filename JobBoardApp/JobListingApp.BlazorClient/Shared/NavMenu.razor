@@ -1,7 +1,7 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿ <div class="top-row ps-3 navbar navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="">JobListingApp.BlazorClient</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
@@ -21,7 +21,8 @@
             </NavLink>
         </div>
     </nav>
-</div>
+</div> 
+
 
 @code {
     private bool collapseNavMenu = true;

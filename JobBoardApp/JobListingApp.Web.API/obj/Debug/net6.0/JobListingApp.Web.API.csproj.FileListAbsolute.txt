@@ -89,3 +89,5 @@ C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Web.API\obj\Debug\net6.0\
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Web.API\obj\Debug\net6.0\JobListingApp.Web.API.genruntimeconfig.cache
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Web.API\obj\Debug\net6.0\ref\JobListingApp.Web.API.dll
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Web.API\obj\Debug\net6.0\JobListingApp.Web.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Web.API\bin\Debug\net6.0\JobListingApp.SharedKernel.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.Web.API\bin\Debug\net6.0\JobListingApp.SharedKernel.pdb
