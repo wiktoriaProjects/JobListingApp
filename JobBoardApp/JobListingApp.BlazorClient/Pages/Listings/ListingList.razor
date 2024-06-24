@@ -35,6 +35,8 @@
  @page "/listing"
 @inherits LayoutComponentBase
 @inject IListingService _listingService
+@inject ILikesService _likesService
+@inject NavigationManager NavigationManager
 
 <PageTitle>Job Listings</PageTitle>
 <h1>Job Offers</h1>
@@ -42,7 +44,7 @@
 <div class="row">
     @foreach (var listing in _listingList)
     {
-        <div class="job-item card mb-3">
+        <div class="job-item card mb-3"> 
              <EditForm Model="@listing" onclick="@(() => AddToLiked(@listing))">
                 <img class="card-img-top" src="..." alt="Card image cap"> 
 
@@ -52,12 +54,8 @@
                     <p class="card-text">Company: @listing.Company</p>
                     <p class="card-text">Location: @listing.Location</p>
 
-                   @*  <div class="form-group">
-                        <label for="countInput">Count:</label>
-                        <InputNumber id="countInput" @bind-Value="@listing.Count"></InputNumber>
-                    </div> *@
-
                     <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary" @onclick="() => NavigateToListing(listing.Id)">Apply</button>
                 </div>
              </EditForm> 
 
@@ -72,9 +70,19 @@
     {
         _listingList = await _listingService.GetAll();
     }
-    private async Task AddToLiked(ListingDto listing)
+    private async Task AddToLiked(ListingDto l)
     {
-       
+        LikedListing likedListing = new LikedListing()
+            {
+                Listing = l,
+                Count = Count,
+            };
+            await _likesService.Add(likedListing);
+            Count = 1;
+    }
+    private void NavigateToListing(int listingId)
+    {
+        NavigationManager.NavigateTo($"/listings/{listingId}");
     }
     // private List<ListingDto> _listingList = new List<ListingDto>()
     // {

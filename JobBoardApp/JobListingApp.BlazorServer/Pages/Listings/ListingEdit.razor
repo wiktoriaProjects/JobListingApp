@@ -3,15 +3,17 @@
 @page "/listing/edit/{id:int}"
 @using Blazored.FluentValidation
 @using JobListingApp.Application.Services
+@using JobListingApp.BlazorServer.Service
 @using JobListingApp.SharedKernel.Dto
 @using JobListingApp.Domain.Models
 @inject IListingService _listingService
 @inject NavigationManager _navigationManager
+@inject IFileService _fileService
 
 <PageTitle>Edit Job Listingt</PageTitle>
 <h1>Edit listing</h1>
 
-  <EditForm Model="@_listing" OnSubmit="@UpdateListing">
+<EditForm Model="@_listing" OnValidSubmit="@UpdateListing">
     <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
 
 
@@ -45,6 +47,13 @@
         <InputText id="company" class="form-control" @bind-Value="_listing.Company" />
         <ValidationMessage For="@(() => _listing.Company)" />
     </div>
+    <div class="form-group">
+        <label>Image: </label>
+        <InputFile OnChange="HandleImageUpload"></InputFile>
+    </div>
+    <div class="form-group">
+        <img src="@_listing.ImageUrl" width="240">
+    </div>
     <br />
     <div class="form-group">
         <button class="btn btn-primary" type="submit"> <span class="oi oi-pencil"></span> Update </button>
@@ -59,19 +68,48 @@
     public int Id { get; set; }
     private FluentValidationValidator? _fluentValidationValidator;
     private UpdateListingDto _listing = null;
+    private string _oldImageUrl = null;
+
     protected override void OnInitialized()
     {
         base.OnInitialized();
         var l = _listingService.GetById(Id);
-        _listing = new UpdateListingDto() { Id = l.Id, Title = l.Title, Description = l.Description, Company = l.Company, Location = l.Location, PostedDate = l.PostedDate };
+        _listing = new UpdateListingDto() { Id = l.Id, Title = l.Title, Description = l.Description, Company = l.Company, Location = l.Location, PostedDate = l.PostedDate,  ImageUrl = l.ImageUrl };
     }
     private void UpdateListing()
     {
+        if ((_oldImageUrl != "/images/no-image-icon.png")
+     && (_oldImageUrl != _listing.ImageUrl))
+        {
+            _fileService.DeleteFile(_oldImageUrl);
+        }
         _listingService.Update(_listing);
         _navigationManager.NavigateTo("/listing");
     }
     private void BackToList()
     {
         _navigationManager.NavigateTo("/listing");
+    }
+
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        if (e.GetMultipleFiles().Count > 0)
+        {
+            foreach (var file in e.GetMultipleFiles())
+            {
+                System.IO.FileInfo fileInfo = new System.IO.FileInfo(file.Name);
+                if (fileInfo.Extension.ToLower() == ".jpg" ||
+                fileInfo.Extension.ToLower() == ".png" ||
+                fileInfo.Extension.ToLower() == ".jpeg")
+                {
+                    _listing.ImageUrl = await _fileService.UploadFile(file);
+                }
+                else
+                {
+                    // komunikat o błędzie
+                    return;
+                }
+            }
+        }
     }
 }

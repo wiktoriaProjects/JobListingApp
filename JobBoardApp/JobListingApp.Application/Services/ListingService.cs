@@ -4,6 +4,7 @@ using JobListingApp.Domain.Contracts;
 using JobListingApp.Domain.Exceptions;
 using JobListingApp.Domain.Models;
 using JobListingApp.SharedKernel.Dto;
+using System.Reflection;
 
 
 namespace JobListingApp.Application.Services
@@ -65,6 +66,9 @@ namespace JobListingApp.Application.Services
             var id = _uow.ListingRepository.GetMaxId() + 1;
             var listing = _mapper.Map<Listing>(dto);
             listing.Id = id;
+            listing.ImageUrl = String.IsNullOrEmpty(dto.ImageUrl)
+             ? "/images/no-image-icon.png"
+             : dto.ImageUrl;
             _uow.ListingRepository.Insert(listing);
             _uow.Commit();
             return id;
@@ -86,6 +90,9 @@ namespace JobListingApp.Application.Services
             l.Description = dto.Description;
             l.Company = dto.Company;
             l.PostedDate = dto.PostedDate;
+            l.ImageUrl = String.IsNullOrEmpty(dto.ImageUrl)
+             ? "/images/no-image-icon.png"
+             : dto.ImageUrl;
             _uow.Commit();
 
         }

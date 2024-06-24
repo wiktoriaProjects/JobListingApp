@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JobListingApp.BlazorClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6873035bd19fea256df8649f7abe9031296d4fbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a14860f19c4742c5d423dc4d690f41e15706cf98")]
 [assembly: System.Reflection.AssemblyProductAttribute("JobListingApp.BlazorClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JobListingApp.BlazorClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

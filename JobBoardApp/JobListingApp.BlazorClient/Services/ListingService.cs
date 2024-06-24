@@ -21,5 +21,17 @@ namespace JobListingApp.BlazorClient.Services
             }
             return new List<ListingDto>();
         }
+        public async Task<ListingDto> GetListingById(int id)
+        {
+            var response = await _httpClient.GetAsync($"Listings/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var listing = JsonConvert.DeserializeObject<ListingDto>(content);
+                return listing;
+            }
+            return null;
+        }
+
     }
 }

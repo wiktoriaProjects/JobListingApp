@@ -11,6 +11,7 @@ using JobListingApp.Domain.Contracts;
 using JobListingApp.Infrastructure.Repositories;
 using JobListingApp.Application.Validators;
 using JobListingApp.SharedKernel.Dto;
+using JobListingApp.BlazorServer.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +32,7 @@ builder.Services.AddScoped<IBoardUnitOfWork, BoardUnitOfWork>();
 builder.Services.AddScoped<IListingRepository, ListingRepository>();
 builder.Services.AddScoped<DataSeeder>();
 builder.Services.AddScoped<IListingService, ListingService>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 
 

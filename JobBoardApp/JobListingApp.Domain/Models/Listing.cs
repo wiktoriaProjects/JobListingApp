@@ -24,6 +24,7 @@ namespace JobListingApp.Domain.Models
         public string Company { get; set; }
         //[Required]
         public DateTime PostedDate { get; set; }
+        public string ImageUrl { get; set; } = "/images/no-image-icon.png";
 
     }
 }

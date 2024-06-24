@@ -43,6 +43,9 @@
                         <button class="btn bg-danger" @onclick="@(()=>DeleteListing(@listing.Id))"><span class="oi oi-delete" aria-hidden="true"></span> Delete </button>
                         
                     </td>
+                    <td>
+                        <img src="@listing.ImageUrl" width="64">
+                    </td>
             </tr>
         }
 

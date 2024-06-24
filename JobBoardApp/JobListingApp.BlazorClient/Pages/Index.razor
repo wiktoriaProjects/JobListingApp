@@ -1,9 +1,74 @@
 ﻿@page "/"
+@inject IListingService ListingService
+@using JobListingApp.BlazorClient.Services
 
-<PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Search for jobs..." @bind="searchQuery" @oninput="SearchJobs" />
+        </div>
+    </div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    <div class="row">
+        @foreach (var article in articles)
+        {
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="@article.ImageUrl" alt="Article image">
+                    <div class="card-body">
+                        <h5 class="card-title">@article.Title</h5>
+                        <p class="card-text">@article.Description</p>
+                        <a href="@article.Url" class="btn btn-primary" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">© 2024 Job Board. All rights reserved.</span>
+    </div>
+</footer>
+
+@code {
+    private List<ArticleDto> articles = new List<ArticleDto>();
+    private string searchQuery = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        articles = await GetArticles();
+    }
+
+    private async Task<List<ArticleDto>> GetArticles()
+    {
+        // Simulated async call to get articles. Replace with your actual data retrieval logic.
+        await Task.Delay(500);
+        return new List<ArticleDto>
+        {
+            new ArticleDto { Title = "How to Write a Resume", Description = "Learn the best tips and tricks for writing a resume that stands out.", ImageUrl = "https://source.unsplash.com/random/400x200", Url = "#" },
+            new ArticleDto { Title = "Acing Your Job Interview", Description = "Discover the secrets to acing your next job interview.", ImageUrl = "https://source.unsplash.com/random/400x200?2", Url = "#" },
+            // Add more articles as needed
+        };
+    }
+
+    private void SearchJobs(ChangeEventArgs e)
+    {
+        searchQuery = e.Value.ToString();
+        // Implement search logic here
+    }
+
+    public class ArticleDto
+    {
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string ImageUrl { get; set; }
+        public string Url { get; set; }
+    }
+}
+
+
+

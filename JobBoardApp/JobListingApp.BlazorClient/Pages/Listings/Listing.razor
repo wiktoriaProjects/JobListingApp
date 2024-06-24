@@ -1,0 +1,136 @@
+﻿@page "/listings/{id:int}"
+@inject HttpClient Http
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+@inject IListingService _listingService
+
+@if (listing != null)
+{
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@listing.Title</h5>
+            <p class="card-text"><strong>Company:</strong> @listing.Company</p>
+            <p class="card-text"><strong>Posted:</strong> @GetPostedDateDisplay(listing.PostedDate)</p>
+            <p class="card-text"><strong>Location:</strong> @listing.Location</p>
+            <p class="card-text"><strong>Description:</strong> @listing.Description</p>
+            <button class="btn btn-primary" @onclick="ShowModal">Apply</button>
+            
+        </div>
+         <div class="card-footer">
+            <Map Location="@listing.Location" />
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade @(isModalVisible ? "show d-block" : "d-none")" tabindex="-7" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="applyModalLabel">Apply for @listing.Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="HideModal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                        <div class="modal-body p-4">
+                    <EditForm Model="@applicationModel" OnValidSubmit="HandleValidSubmit">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+
+
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <InputText id="name" class="form-control" @bind-Value="applicationModel.Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Surname:</label>
+                            <InputText id="surname" class="form-control" @bind-Value="applicationModel.Surname" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <InputText id="email" class="form-control" @bind-Value="applicationModel.Email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resume">Resume:</label>
+                            <InputFile id="resume" class="form-control" OnChange="HandleFileChange" />
+                        </div>
+                         <div class="mt-5"> 
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </EditForm>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private IEnumerable<ListingDto> _listingList = new List<ListingDto>();
+    private ListingDto listing;
+
+    private ApplicationModel applicationModel = new ApplicationModel();
+    private bool isModalVisible = false;
+    protected override async Task OnInitializedAsync()
+    {
+        _listingList = await _listingService.GetAll();
+        listing = _listingList.FirstOrDefault(l => l.Id == Id);
+    }
+
+
+    private void ShowModal()
+    {
+        isModalVisible = true;
+    }
+
+    private void HideModal()
+    {
+        isModalVisible = false;
+    }
+
+    private void HandleValidSubmit()
+    {
+        // Handle the form submission, e.g., send the application to the server
+        Console.WriteLine($"Application submitted for {listing.Title}");
+        HideModal();
+    }
+
+    private void HandleFileChange(InputFileChangeEventArgs e)
+    {
+        // Handle file upload
+        var file = e.File;
+        Console.WriteLine($"Uploaded file: {file.Name}");
+    }
+
+    private string GetPostedDateDisplay(DateTime postedDate)
+    {
+        var today = DateTime.Today;
+        var difference = (today - postedDate).Days;
+
+        if (difference < 7)
+        {
+            return $"{difference} days ago";
+        }
+        else
+        {
+            return postedDate.ToString("dd MMM yyyy");
+        }
+    }
+    public class ApplicationModel
+    {
+        public string Name { get; set; }
+        public string Surname{ get; set; }
+        public string Email { get; set; }
+        
+    }
+   
+}
+

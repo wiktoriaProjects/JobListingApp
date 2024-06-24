@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\JobListingApp.BlazorClient.styles.css"
     },
     {
+      "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\MapComponent.js",
+      "PackagePath": "staticwebassets\\MapComponent.js"
+    },
+    {
       "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\appsettings.json",
       "PackagePath": "staticwebassets\\appsettings.json"
     },
@@ -71,6 +75,10 @@
     {
       "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\images\\no-image-icon.webp",
+      "PackagePath": "staticwebassets\\images\\no-image-icon.webp"
     },
     {
       "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\index.html",

@@ -1,0 +1,58 @@
+﻿@page "/saved"
+
+@inject ILikesService _likesService
+<PageTitle>Saved Listings</PageTitle>
+
+<>Saved Listings</>
+<table class="table">
+
+        <thead>
+             <tr>
+                 <th>Name</th>
+                 <th>Company</th>
+
+             </tr>
+         </thead>
+     <tbody>
+
+
+    @foreach (var l in _listing)
+    {
+        <tr>
+            <td> @l.Listing.Title</td>
+            <td> @l.Listing.Company</td>
+            <td>
+                <EditForm Model ='@l'>
+                    <p>
+                            <button class="btn bg-danger" @onclick=@(() => Remove(l.Listing.Id))>
+                                <span class="oi oi-trash"></span>
+                            </button>
+
+                    </p>
+
+                </EditForm>
+            </td>
+        </tr>
+
+    }
+
+    </tbody>
+</table>
+@code {
+    private List<LikedListing> _listing = new List<LikedListing>();
+    protected override async Task OnInitializedAsync()
+    {
+        _listing = await _likesService.GetSaved();
+    }
+
+    private async Task Remove(int id)
+    {
+        var item = _listing.FirstOrDefault(l => l.Listing.Id == id);
+        if (item != null)
+        {
+            await _likesService.Remove(item);
+        }
+        _listing = await _likesService.GetSaved();
+    }
+
+}

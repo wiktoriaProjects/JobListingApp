@@ -2,10 +2,14 @@
 @using Blazored.FluentValidation
 @using JobListingApp.Application.Services
 @using JobListingApp.SharedKernel.Dto
+@using JobListingApp.BlazorServer.Service
 @using JobListingApp.Domain.Models
 @inject IListingService _listingService
 @inject NavigationManager _navigationManager
+@inject IFileService _fileServic
+
 <PageTitle>Create new job listing</PageTitle>
+<h1>Edit listing</h1>
 
 <EditForm Model="@_listing" OnValidSubmit="@CreateListing">
     <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
@@ -15,7 +19,36 @@
         <InputText @bind-Value="@_listing.Title" class="form-control" />
         <ValidationMessage For="@(() => _listing.Title)" />
     </div>
-    
+    <div class="form-group">
+        <label for="description">Description</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="_listing.Description" />
+        <ValidationMessage For="@(() => _listing.Description)" />
+    </div>
+
+    <div class="form-group">
+        <label for="location">Location</label>
+        <InputText id="location" class="form-control" @bind-Value="_listing.Location" />
+        <ValidationMessage For="@(() => _listing.Location)" />
+    </div>
+
+    <div class="form-group">
+        <label for="postedDate">Posted Date</label>
+        <InputDate id="postedDate" class="form-control" @bind-Value="_listing.PostedDate" />
+        <ValidationMessage For="@(() => _listing.PostedDate)" />
+    </div>
+
+    <div class="form-group">
+        <label for="company">Company</label>
+        <InputText id="company" class="form-control" @bind-Value="_listing.Company" />
+        <ValidationMessage For="@(() => _listing.Company)" />
+    </div>
+    <div class="form-group">
+        <label>Image: </label>
+        <InputFile OnChange="HandleImageUpload"></InputFile>
+    </div>
+    <div class="form-group">
+        <img src="@_listing.ImageUrl" width="240">
+    </div>
     <br />
     <div class="form-group">
         <button class="btn btn-primary" type="submit">
@@ -43,4 +76,27 @@
     {
         _navigationManager.NavigateTo("/listing");
     }
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        if (e.GetMultipleFiles().Count > 0)
+        {
+            foreach (var file in e.GetMultipleFiles())
+            {
+                System.IO.FileInfo fileInfo = new System.IO.FileInfo(file.Name);
+                if (fileInfo.Extension.ToLower() == ".jpg" ||
+                fileInfo.Extension.ToLower() == ".png" ||
+                fileInfo.Extension.ToLower() == ".jpeg")
+                {
+                    _listing.ImageUrl = await _fileService.UploadFile(file);
+                }
+                else
+                {
+                    // komunikat o błędzie
+                    return;
+                }
+            }
+        }
+    }
+
+
 }

@@ -14,4 +14,8 @@
     <ProjectReference Include="..\JobListingApp.Infrastructure\JobListingApp.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\listings\" />
+  </ItemGroup>
+
 </Project>

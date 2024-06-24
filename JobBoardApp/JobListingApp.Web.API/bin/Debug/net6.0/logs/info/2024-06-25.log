@@ -1,0 +1,27 @@
+2024-06-25 00:00:07.4738|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:00:34.2327|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-06-25 00:00:34.5911|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:04:46.2596|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:05:28.8787|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:12:53.1937|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:14:54.7714|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:15:14.1659|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-06-25 00:15:14.5313|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:19:40.1836|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:20:07.9652|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-06-25 00:20:08.2325|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:24:19.6065|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:26:22.1433|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:30:18.1668|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:30:51.7967|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:35:52.2859|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:39:58.2977|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:42:50.3457|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 00:49:09.6410|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-06-25 00:49:10.0808|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:49:14.7367|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:49:39.8934|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
+2024-06-25 00:51:47.7580|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 01:18:56.5985|DEBUG|JobListingApp.Web.API.Program|init main
+2024-06-25 01:19:26.1470|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-06-25 01:19:26.4189|DEBUG|JobListingApp.Web.API.Controllers.ListingsController|Downloading all listings finished
