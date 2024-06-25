@@ -1,7 +1,8 @@
 
 This project is a Job Listing application built using ASP.NET Core Web API and Entity Framework Core. It allows users to create, read, update, and delete job listings. The application utilizes both Blazor Server and Blazor WebAssembly to provide a flexible and powerful client-server architecture. 
 [JIRA](https://joblistingapp.atlassian.net/jira/software/projects/JBA/boards/34/timeline)
-MORE >> karta projektu [docs](https://docs.google.com/document/d/10jgVpblVkaSW4zHGEwVzKgBJ-58-4s3Qi8xNSz3aSGE/edit)
+MORE
+[KARTA PROJEKTU](https://docs.google.com/document/d/10jgVpblVkaSW4zHGEwVzKgBJ-58-4s3Qi8xNSz3aSGE/edit)
 ## screenshots
 ![jobapp_snap1](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/34c3b06c-1d11-4778-a230-035620f1b7c2)
 ![jobapp_snap2](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/0ea1c418-29db-46eb-bfbb-e4b374487dc9)
