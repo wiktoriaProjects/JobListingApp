@@ -44,10 +44,3 @@ cd JobListingApp
 ```
 ### 2. Check that your localhost settings in the wwwroot directory are correctly configured to match your development environment. 
 
-Here are the available API endpoints:
-
-GET /api/JobListings: Fetch all job listings.
-GET /api/JobListings/{id}: Fetch a specific job listing by ID.
-POST /api/JobListings: Create a new job listing.
-PUT /api/JobListings/{id}: Update an existing job listing by ID.
-DELETE /api/JobListings/{id}: Delete a job listing by ID.
