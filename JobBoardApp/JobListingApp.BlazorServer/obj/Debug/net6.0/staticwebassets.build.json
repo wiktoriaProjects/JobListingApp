@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IEZTapPGT34OKuPd/7nwASIFsDktwHj8cac9IWzmTeg=",
+  "Hash": "+YCpNJbS1qKTcL/7quh/CDuusy6Nq2ZYsq8Co7brOyg=",
   "Source": "JobListingApp.BlazorServer",
   "BasePath": "_content/JobListingApp.BlazorServer",
   "Mode": "Default",
@@ -300,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorServer\\wwwroot\\images\\listings\\tech_sol_logo.png",
+      "SourceId": "JobListingApp.BlazorServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorServer\\wwwroot\\",
+      "BasePath": "_content/JobListingApp.BlazorServer",
+      "RelativePath": "images/listings/tech_sol_logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\listings\\tech_sol_logo.png"
     },
     {
       "Identity": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorServer\\wwwroot\\images\\no-image-icon.png",

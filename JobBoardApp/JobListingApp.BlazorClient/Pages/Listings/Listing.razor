@@ -9,6 +9,9 @@
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">@listing.Title</h5>
+            <td>
+                <img src="@listing.ImageUrl" width="164">
+            </td>
             <p class="card-text"><strong>Company:</strong> @listing.Company</p>
             <p class="card-text"><strong>Posted:</strong> @GetPostedDateDisplay(listing.PostedDate)</p>
             <p class="card-text"><strong>Location:</strong> @listing.Location</p>

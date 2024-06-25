@@ -46,8 +46,11 @@
     {
         <div class="job-item card mb-3"> 
              <EditForm Model="@listing" onclick="@(() => AddToLiked(@listing))">
-                <img class="card-img-top" src="..." alt="Card image cap"> 
-
+                <td>
+                    <img src="@listing.ImageUrl" width="100">
+                </td>
+                @* <img class="card-img-top" src="@listing.ImageUrl" alt="Card image cap"> *@
+                
                 <div class="card-body">
                     <h5 class="card-title">@listing.Title</h5>
                     @* <p class="card-text">@listing.Description</p> *@

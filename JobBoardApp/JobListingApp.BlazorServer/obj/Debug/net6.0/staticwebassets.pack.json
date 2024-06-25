@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorServer\\wwwroot\\images\\listings\\tech_sol_logo.png",
+      "PackagePath": "staticwebassets\\images\\listings\\tech_sol_logo.png"
+    },
+    {
       "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorServer\\wwwroot\\images\\no-image-icon.png",
       "PackagePath": "staticwebassets\\images\\no-image-icon.png"
     },

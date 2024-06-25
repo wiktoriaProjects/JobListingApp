@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XjKcMRja4llrCwUORYEz9J81CxI1WPHuAIlrWbeUURc=",
+  "Hash": "V8wkcG2Ghlv+Cit0K+FqPGs7m9B0BZXKwpoB90VWmDo=",
   "Source": "JobListingApp.BlazorClient",
   "BasePath": "/",
   "Mode": "Root",
@@ -8681,6 +8681,25 @@
       "OriginalItemSpec": "wwwroot\\icon-192.png"
     },
     {
+      "Identity": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\images\\interview.png",
+      "SourceId": "JobListingApp.BlazorClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/interview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\interview.png"
+    },
+    {
       "Identity": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\images\\no-image-icon.webp",
       "SourceId": "JobListingApp.BlazorClient",
       "SourceType": "Discovered",
@@ -8698,6 +8717,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\no-image-icon.webp"
+    },
+    {
+      "Identity": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\images\\resume.png",
+      "SourceId": "JobListingApp.BlazorClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/resume.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\resume.png"
     },
     {
       "Identity": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\index.html",

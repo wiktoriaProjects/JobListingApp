@@ -49,8 +49,10 @@
         await Task.Delay(500);
         return new List<ArticleDto>
         {
-            new ArticleDto { Title = "How to Write a Resume", Description = "Learn the best tips and tricks for writing a resume that stands out.", ImageUrl = "https://source.unsplash.com/random/400x200", Url = "#" },
-            new ArticleDto { Title = "Acing Your Job Interview", Description = "Discover the secrets to acing your next job interview.", ImageUrl = "https://source.unsplash.com/random/400x200?2", Url = "#" },
+            new ArticleDto { Title = "How to Write a Resume", Description = "Learn the best tips and tricks for writing a resume that stands out.",
+            ImageUrl = "/images/resume.png", Url = "#"  },
+
+            new ArticleDto { Title = "Acing Your Job Interview", Description = "Discover the secrets to acing your next job interview.",  ImageUrl = "/images/interview.png", Url = "#" },
             // Add more articles as needed
         };
     }

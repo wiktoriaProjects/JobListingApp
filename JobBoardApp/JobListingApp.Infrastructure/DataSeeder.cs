@@ -1,4 +1,5 @@
 ﻿using JobListingApp.Domain.Models;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace JobListingApp.Infrastructure
 {
@@ -12,11 +13,19 @@ namespace JobListingApp.Infrastructure
         }
         public void Seed()
         {
-            _dbContext.Database.EnsureDeleted();
+            //_dbContext.Database.EnsureDeleted();
             _dbContext.Database.EnsureCreated();
-
             if (_dbContext.Database.CanConnect())
             {
+                SeedListings();
+                SeedJobCategories();
+                SeedApplications();
+            }
+
+        }
+        private void SeedListings()
+        {
+            
                 if (!_dbContext.Listings.Any())
                 {
                     var listings = new List<Listing>
@@ -29,7 +38,7 @@ namespace JobListingApp.Infrastructure
                             Description = "Seeking an experienced data scientist to lead our analytics team. Must have expertise in machine learning, statistical analysis, and big data technologies.",
                             Company = "Tech Innovations Inc.",
                             PostedDate = DateTime.Now.AddDays(-5),
-                            ImageUrl = "/images/no-image-icon.png"
+                            ImageUrl = "/images/listings/tech_sol_logo.png"
                         },
 
                         new Listing()
@@ -66,7 +75,7 @@ namespace JobListingApp.Infrastructure
                         },
 
                         new Listing()
-                        {   
+                        {
                             Id = 5,
                             Title = "Operations Analyst",
                             Location = "Miami, FL",
@@ -105,7 +114,57 @@ namespace JobListingApp.Infrastructure
                     _dbContext.SaveChanges();
 
                 }
+        }
+
+        private void SeedJobCategories()
+        {
+            if (!_dbContext.JobCategories.Any())
+            {
+                var jobCategories = new List<JobCategory>
+            {
+                new JobCategory { Name = "Engineering" },
+                new JobCategory { Name = "Marketing" },
+                new JobCategory { Name = "Finance" },
+                new JobCategory { Name = "Human Resources" },
+                new JobCategory { Name = "IT" }
+            };
+                _dbContext.JobCategories.AddRange(jobCategories);
+                _dbContext.SaveChanges();
             }
         }
-    }
+
+        private void SeedApplications()
+        {
+            if (!_dbContext.Applications.Any())
+            {
+                var applications = new List<Applications>
+            {
+                new Applications
+                {
+                    Name = "John",
+                    Surname = "Doe",
+                    Email = "john.doe@example.com",
+                    Resume = "sss",
+                    //DateSubmitted = DateTime.Now,
+                    ListingId = 1
+
+                },
+                new Applications
+                {
+                    Name = "Jane",
+                    Surname = "Smith",
+                    Email = "jane.smith@example.com",
+                    Resume = "sss",
+                   // DateSubmitted = DateTime.Now,
+                    ListingId = 1
+        }
+            };
+                _dbContext.Applications.AddRange(applications);
+                _dbContext.SaveChanges();
+            }
+
+        }
+
+
+        }
 }

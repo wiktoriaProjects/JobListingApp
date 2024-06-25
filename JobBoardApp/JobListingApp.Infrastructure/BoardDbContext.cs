@@ -9,8 +9,9 @@ namespace JobListingApp.Infrastructure
         public DbSet<Listing> Listings { get; set; }
         //to do 
         //public DbSet<Company> Companies { get; set; }
-        public DbSet<JobCategoryDto> JobCategories { get; set; }
-        //public DbSet<Applicant> Applicants { get; set; }
+        public DbSet<JobCategory> JobCategories { get; set; }
+
+        public DbSet<Applications> Applications { get; set; }
 
         public BoardDbContext(DbContextOptions<BoardDbContext> options) : base(options)
         {

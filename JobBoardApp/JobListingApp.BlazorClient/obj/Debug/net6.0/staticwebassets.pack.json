@@ -77,8 +77,16 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\images\\interview.png",
+      "PackagePath": "staticwebassets\\images\\interview.png"
+    },
+    {
       "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\images\\no-image-icon.webp",
       "PackagePath": "staticwebassets\\images\\no-image-icon.webp"
+    },
+    {
+      "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\images\\resume.png",
+      "PackagePath": "staticwebassets\\images\\resume.png"
     },
     {
       "Id": "C:\\Users\\wikto\\JobListingApp\\JobBoardApp\\JobListingApp.BlazorClient\\wwwroot\\index.html",
