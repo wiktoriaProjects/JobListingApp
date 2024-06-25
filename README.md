@@ -2,13 +2,22 @@ JIRA
 https://joblistingapp.atlassian.net/jira/software/projects/JBA/boards/34/timeline
 This project is a Job Listing application built using ASP.NET Core Web API and Entity Framework Core. It allows users to create, read, update, and delete job listings.
 MORE >> karta projektu [docs](https://docs.google.com/document/d/10jgVpblVkaSW4zHGEwVzKgBJ-58-4s3Qi8xNSz3aSGE/edit)
+## screenshots
+![jobapp_snap1](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/34c3b06c-1d11-4778-a230-035620f1b7c2)
+
 
 ## Features
 
+Server
 - **Create Job Listings**: Add new job listings with details such as title, description, company, and posted date.
 - **Read Job Listings**: Fetch and view all job listings or specific listings by ID.
 - **Update Job Listings**: Modify existing job listings.
 - **Delete Job Listings**: Remove job listings by ID.
+Client
+- **Apply to Job Listings**: Allows clients to apply directly to job listings. This includes functionality for uploading resumes, cover letters, and filling out any required application forms.
+- **Save Job Listings**: Enables clients to bookmark job listings for future reference. Users can save listings to categories like 'Favorites' or 'Interested' for easy access.
+- **Read Job Listings**: Provides the ability to view all job listings.
+  
 
 ## Prerequisites
 
