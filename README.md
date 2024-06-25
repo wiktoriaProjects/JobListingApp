@@ -1,5 +1,4 @@
-JIRA 
-https://joblistingapp.atlassian.net/jira/software/projects/JBA/boards/34/timeline
+[JIRA](https://joblistingapp.atlassian.net/jira/software/projects/JBA/boards/34/timeline)
 This project is a Job Listing application built using ASP.NET Core Web API and Entity Framework Core. It allows users to create, read, update, and delete job listings.
 MORE >> karta projektu [docs](https://docs.google.com/document/d/10jgVpblVkaSW4zHGEwVzKgBJ-58-4s3Qi8xNSz3aSGE/edit)
 ## screenshots
