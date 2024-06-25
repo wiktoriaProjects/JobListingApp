@@ -1,7 +1,7 @@
 {
   "entryAssembly": "JobListingApp.BlazorClient",
   "resources": {
-    "hash": "sha256-zK6MKJPz5ZQhtDo+iJ28Jx3D3slejWt6PbV2Y3lUYLc=",
+    "hash": "sha256-c26wwFKuxqfp3HeNPoIYXUu1dhM8h3UIuxebph+kBdw=",
     "runtime": {
       "dotnet.6.0.26.zldu2hn6lg.js": "sha256-q4SPzhRyXlR1HXK6WAbwJRNI6jvBBYUisoHeH0+eRyM=",
       "dotnet.timezones.blat": "sha256-klrDSl9zL0jGM+Fc+fiCLbJ5Z7U2C9fTDn0+NmIH9VY=",
@@ -205,12 +205,12 @@
       "mscorlib.dll": "sha256-s5oSn2ty4Q1q2t/0DWCHXo4ll77GsoYrYe5ExHyAg0o=",
       "netstandard.dll": "sha256-AH9oqzxpl6lGTr9vEnTGTk40WK7IpSuGlKS3dTEC67I=",
       "System.Private.CoreLib.dll": "sha256-ae6NSkrFVtQY8QH8C38+ZYQDBUinD+PjmAf/eE/eVMQ=",
-      "JobListingApp.SharedKernel.dll": "sha256-/Fo7iZy8QSTiA+IkXaBzswZGgu30CrUb94ExWNk62NM=",
-      "JobListingApp.BlazorClient.dll": "sha256-ZqTH7JIFsQxTS3ZA31yRelLUvTScgY3o38YtkYbiIWM="
+      "JobListingApp.SharedKernel.dll": "sha256-F24e0f3eXQrg9OQ7kosGYuIBSCejvItmvSfCeNvPSjE=",
+      "JobListingApp.BlazorClient.dll": "sha256-QHTqsxQM1OPqyaP7uUzSLk/T7lzVQH6Po701hpeTlHc="
     },
     "pdb": {
-      "JobListingApp.SharedKernel.pdb": "sha256-lJNeM/EfVLAP9TTTK6h/qB0k2XjQWCWC8ogX49iUysA=",
-      "JobListingApp.BlazorClient.pdb": "sha256-/lspV3mwQ6ACeB761NHClnIJPtScM3SbORxLG2VS61U="
+      "JobListingApp.SharedKernel.pdb": "sha256-+KvWJe4FWagmiVSTsxyLskkqRYZQphl2x6rzRqPvHqQ=",
+      "JobListingApp.BlazorClient.pdb": "sha256-fUVdemOVF+ZpxIC/iRkTr3nqmPAGm39xk79cr62zpz8="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

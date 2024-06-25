@@ -13,11 +13,11 @@ public class RegisterCreateListingDtoValidator : AbstractValidator<CreateListing
 {
     public RegisterCreateListingDtoValidator(IBoardUnitOfWork unitOfWork)
     {
-        RuleFor(p => p.Tit)
+        RuleFor(p => p.Title)
             .MinimumLength(2)
             .MaximumLength(30)
             .Matches(new Regex(@"^[a-zA-Z]+$")).WithMessage("Title can only contain letters.");
-        RuleFor(p => p.Desc)
+        RuleFor(p => p.Description)
             .MinimumLength(10)
             .MaximumLength(255);
         RuleFor(p => p.Company);

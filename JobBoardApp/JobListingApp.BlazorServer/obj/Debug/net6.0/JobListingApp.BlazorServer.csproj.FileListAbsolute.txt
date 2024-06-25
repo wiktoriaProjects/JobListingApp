@@ -98,3 +98,5 @@ C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorServer\bin\Debug\ne
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorServer\bin\Debug\net6.0\Microsoft.JSInterop.dll
 C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorServer\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorServer\bin\Debug\net6.0\JobListingApp.SharedKernel.dll
+C:\Users\wikto\JobListingApp\JobBoardApp\JobListingApp.BlazorServer\bin\Debug\net6.0\JobListingApp.SharedKernel.pdb

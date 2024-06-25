@@ -23,7 +23,7 @@ builder.Services.AddAutoMapper(typeof(BoardMappingProfile));
 builder.Services.AddFluentValidationAutoValidation();
 
 // rejestracja kontekstu bazy w kontenerze IoC
-var sqliteConnectionString = "Data Source=JobListingApp.db";
+var sqliteConnectionString = @"Data Source=c:\Users\wikto\JobListingApp\job_board.db";
 builder.Services.AddDbContext<BoardDbContext>(options =>
  options.UseSqlite(sqliteConnectionString));
 // rejestracja walidatora
@@ -56,9 +56,9 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 // seeding data
-using (var scope = app.Services.CreateScope())
-{
-    var dataSeeder = scope.ServiceProvider.GetRequiredService<DataSeeder>();
-    dataSeeder.Seed();
-}
+//using (var scope = app.Services.CreateScope())
+//{
+//    var dataSeeder = scope.ServiceProvider.GetRequiredService<DataSeeder>();
+//    dataSeeder.Seed();
+//}
 app.Run();
