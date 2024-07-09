@@ -6,9 +6,7 @@ MORE
 ## screenshots
 ![jobapp_snap1](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/34c3b06c-1d11-4778-a230-035620f1b7c2)
 ![jobapp_snap2](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/0ea1c418-29db-46eb-bfbb-e4b374487dc9)
-![jobapp_snap3](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/646b51e4-d38f-40d6-8ede-a9e7fe8cdf8c)
-![jobapp_snap4](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/610586f2-ea32-42be-a5c2-1604fd50b8a2)
-![jobapp_snap5](https://github.com/wiktoriaProjects/JobListingApp/assets/163647716/53238842-9aff-4668-ad85-d05924384e5a)
+
 
 
 ## Features
